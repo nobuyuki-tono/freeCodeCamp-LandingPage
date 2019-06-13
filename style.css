@@ -1,0 +1,194 @@
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+#header {
+  background: #eee;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+#header-img {
+  width: 400px;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#nav-bar ul li {
+  font-size: 1.4rem;
+  padding: 10px 20px 10px 20px;
+}
+
+#nav-bar ul li:hover {
+  background: coral;
+  border-radius: 10px;
+}
+
+.top {
+  text-align: center;
+}
+
+.top input {
+  width: 30%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.btn-1 {
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: #f1c40f;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-1:hover {
+  background: orange;
+  transition: background-color 1s;
+}
+
+#features {
+  margin-top: 150px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: orange;
+  text-align: center;
+}
+
+#how-it-works {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+#video {
+  max-width: 500px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+  
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: right;
+  margin: 40px 40px 0px 40px;
+}
+
+.link {
+  padding: 10px 20px 0px 0px;
+}
+
+.link a {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.link a:hover {
+  color: coral;
+}
+
+footer p {
+  padding: 0px 20px 20px 0px;
+}
+
+@media(max-width: 650px) {
+  #header {
+    flex-wrap: wrap;
+  }
+
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    margin: auto;
+  }
+}
